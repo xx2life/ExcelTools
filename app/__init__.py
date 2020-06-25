@@ -8,7 +8,7 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 
-from app.resources import router
+from app.api import router
 from app.config import API_V1_STR,ALLOWED_HOSTS
 from app.db.mongodb_utils import close_mongo_connection,connect_to_mongo
 
