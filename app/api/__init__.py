@@ -4,7 +4,7 @@
 
 from fastapi import APIRouter
 
-from app.api.excel_tools import router as router_excel
+from app.api.excel import router as router_excel
 
 router = APIRouter()
 router.include_router(router_excel, tags=["excel_tools"], prefix="/excel")
